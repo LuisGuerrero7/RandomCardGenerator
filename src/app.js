@@ -32,4 +32,13 @@ window.onload = function() {
   for (let element of cardSymbolElements) {
     element.innerHTML = cardSymbol;
   }
+
+  cardSymbolElements[1].style.transform = "rotate(180deg)";
+  cardSymbolElements[1].style.textAlign = "end";
+
+  for (let element of cardSymbolElements) {
+    if (cardSymbol == "♥" || cardSymbol == "♦") {
+      element.style.color = "red";
+    }
+  }
 };
